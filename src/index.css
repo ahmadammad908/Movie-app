@@ -1,0 +1,324 @@
+body {
+  overflow-x: hidden;
+}
+
+body::-webkit-scrollbar {
+  display: none;
+}
+
+.btn {
+  display: flex;
+  justify-content: center;
+  padding-top: 30px;
+}
+.btn1 {
+  border: none;
+  background: red;
+  display: flex;
+  border-radius: 10px;
+  align-items: center;
+  cursor: pointer;
+  outline: none;
+  padding: 10px;
+  justify-content: center;
+  
+}
+.log {
+  margin-left: 10px;
+}
+.search {
+  position: absolute;
+  top: 6em;
+  left: 0;
+  padding: 3px;
+  
+}
+input::placeholder {
+  color: gray;
+}
+.input {
+  border: 1px solid #3ba3cd;
+  border-radius: 10px;
+  outline: none;
+  overflow: hidden;
+  color: black;
+  padding: 8px;
+  
+}
+.input:hover{
+  background: #3ba3cd;
+  border: none;
+  color: black;
+  outline: none;
+  transition: 0.5s ease-in-out;
+}
+.filter {
+  display: flex;
+  justify-content: center;
+  padding-top: 10em;
+  margin-top: 3em;
+}
+.filter2 {
+  display: flex;
+  justify-content: center;
+  padding-top: 30px;
+}
+.filter2 h1 {
+  font-size: 30px;
+  color:#3ba3cd;
+  font-weight: bold;
+}
+.image12 {
+  border-radius: 100%;
+}
+.btnnnnn::before {
+  content: "🔔";
+  position: absolute;
+  top: -0.75em;
+  right: -0.75em;
+  height: 1.5em;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50%;
+  padding:5px ;
+  background-color: red;
+  color: white;
+}
+.image12{
+  object-fit: cover;
+  border-radius: 100%;
+}
+
+
+
+
+
+
+
+
+#page {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+}
+
+#h3 {
+  color: #3BA3CD;
+}
+
+#ring {
+  width: 190px;
+  height: 190px;
+  border: 1px solid transparent;
+  border-radius: 50%;
+  position: absolute;
+}
+
+#ring:nth-child(1) {
+  border-bottom: 8px solid rgb(255, 141, 249);
+  animation: rotate1 2s linear infinite;
+}
+
+@keyframes rotate1 {
+  from {
+    transform: rotateX(50deg) rotateZ(110deg);
+  }
+
+  to {
+    transform: rotateX(50deg) rotateZ(470deg);
+  }
+}
+
+#ring:nth-child(2) {
+  border-bottom: 8px solid rgb(255,65,106);
+  animation: rotate2 2s linear infinite;
+}
+
+@keyframes rotate2 {
+  from {
+    transform: rotateX(20deg) rotateY(50deg) rotateZ(20deg);
+  }
+
+  to {
+    transform: rotateX(20deg) rotateY(50deg) rotateZ(380deg);
+  }
+}
+
+#ring:nth-child(3) {
+  border-bottom: 8px solid rgb(0,255,255);
+  animation: rotate3 2s linear infinite;
+}
+
+@keyframes rotate3 {
+  from {
+    transform: rotateX(40deg) rotateY(130deg) rotateZ(450deg);
+  }
+
+  to {
+    transform: rotateX(40deg) rotateY(130deg) rotateZ(90deg);
+  }
+}
+
+#ring:nth-child(4) {
+  border-bottom: 8px solid rgb(252, 183, 55);
+  animation: rotate4 2s linear infinite;
+}
+
+@keyframes rotate4 {
+  from {
+    transform: rotateX(70deg) rotateZ(270deg);
+  }
+
+  to {
+    transform: rotateX(70deg) rotateZ(630deg);
+  }
+}
+
+
+
+
+
+
+.square {
+  width: 8px;
+  height: 30px;
+  background: rgb(71, 195, 248);
+  border-radius: 10px;
+  display: block;
+  /*margin:10px;*/
+  -webkit-animation: turn 2.5s ease infinite;
+  animation: turn 2.5s ease infinite;
+  box-shadow: rgb(71, 195, 248) 0px 1px 15px 0px;
+}
+
+.top {
+  position: absolute;
+  left: 40%;
+  top: 50%;
+  -webkit-transform: rotate(90deg);
+  transform: rotate(90deg);
+}
+
+.bottom {
+  position: absolute;
+  left: 40%;
+  top: 50%;
+  -webkit-transform: rotate(-90deg);
+  transform: rotate(-90deg);
+}
+
+.left {
+  position: absolute;
+  left: 40%;
+  top: 50%;
+}
+
+.right {
+  position: absolute;
+  left: 40%;
+  top: 50%;
+  -webkit-transform: rotate(-180deg);
+  transform: rotate(-180deg);
+}
+
+@-webkit-keyframes turn {
+  0% {
+    transform: translateX(0) translateY(0) rotate(0);
+  }
+
+  50% {
+    transform: translateX(400%) translateY(100%) rotate(90deg);
+  }
+
+  100% {
+    transform: translateX(0) translateY(0) rotate(0);
+  }
+}
+
+@keyframes turn {
+  0% {
+    transform: translateX(0) translateY(0) rotate(0);
+  }
+
+  70% {
+    transform: translateX(400%) translateY(100%) rotate(90deg);
+  }
+
+  100% {
+    transform: translateX(0) translateY(0) rotate(0);
+  }
+}
+
+
+
+.myImage {
+  background: #4A5568;
+  min-height: 100vh;
+
+}
+
+
+
+.loader {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  border: 3px solid red;
+  border-top-color: transparent;
+  animation: rot1 1.2s linear infinite;
+}
+
+@keyframes rot1 {
+  to {
+    transform: rotate(360deg);
+  }
+}
+.card:hover {
+  transition: 1s ease-in-out;
+  transform: scale(1.09);
+}
+
+.card:active {
+  transform: scale(0.95) rotateZ(1.7deg);
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* Animation only works in a webkit browser*/
+
+
